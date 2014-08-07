@@ -19,6 +19,8 @@
 		B23C27FC198FDA4D00E705E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23C27E4198FDA4C00E705E1 /* UIKit.framework */; };
 		B23C2804198FDA4D00E705E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B23C2802198FDA4D00E705E1 /* InfoPlist.strings */; };
 		B23C2806198FDA4D00E705E1 /* BackgroundGeolocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B23C2805198FDA4D00E705E1 /* BackgroundGeolocationTests.m */; };
+		B23C2812198FDA8900E705E1 /* PMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B23C2810198FDA8900E705E1 /* PMViewController.m */; };
+		B23C2813198FDA8900E705E1 /* PMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23C2811198FDA8900E705E1 /* PMViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		B23C2801198FDA4D00E705E1 /* BackgroundGeolocationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BackgroundGeolocationTests-Info.plist"; sourceTree = "<group>"; };
 		B23C2803198FDA4D00E705E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B23C2805198FDA4D00E705E1 /* BackgroundGeolocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackgroundGeolocationTests.m; sourceTree = "<group>"; };
+		B23C280F198FDA8900E705E1 /* PMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMViewController.h; sourceTree = "<group>"; };
+		B23C2810198FDA8900E705E1 /* PMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMViewController.m; sourceTree = "<group>"; };
+		B23C2811198FDA8900E705E1 /* PMViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,9 @@
 			children = (
 				B23C27EF198FDA4C00E705E1 /* PMAppDelegate.h */,
 				B23C27F0198FDA4C00E705E1 /* PMAppDelegate.m */,
+				B23C280F198FDA8900E705E1 /* PMViewController.h */,
+				B23C2810198FDA8900E705E1 /* PMViewController.m */,
+				B23C2811198FDA8900E705E1 /* PMViewController.xib */,
 				B23C27F2198FDA4C00E705E1 /* Images.xcassets */,
 				B23C27E7198FDA4C00E705E1 /* Supporting Files */,
 			);
@@ -191,6 +199,13 @@
 				CLASSPREFIX = PM;
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
+					B23C27DC198FDA4C00E705E1 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					B23C27F7198FDA4D00E705E1 = {
 						TestTargetID = B23C27DC198FDA4C00E705E1;
 					};
@@ -219,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B23C2813198FDA8900E705E1 /* PMViewController.xib in Resources */,
 				B23C27EB198FDA4C00E705E1 /* InfoPlist.strings in Resources */,
 				B23C27F3198FDA4C00E705E1 /* Images.xcassets in Resources */,
 			);
@@ -240,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B23C27ED198FDA4C00E705E1 /* main.m in Sources */,
+				B23C2812198FDA8900E705E1 /* PMViewController.m in Sources */,
 				B23C27F1198FDA4C00E705E1 /* PMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +456,7 @@
 				B23C280B198FDA4D00E705E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B23C280C198FDA4D00E705E1 /* Build configuration list for PBXNativeTarget "BackgroundGeolocationTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +465,7 @@
 				B23C280E198FDA4D00E705E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

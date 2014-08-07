@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface PMAppDelegate : UIResponder <UIApplicationDelegate>
+#import "PMViewController.h"
+
+@interface PMAppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic) CLLocationManager *locationManager;
 
 @end
